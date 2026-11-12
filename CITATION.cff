@@ -9,11 +9,11 @@ repository-code: "https://github.com/selcuktopalidu/unsur-legality-review"
 authors:
   - family-names: "Öztoprak"
     given-names: "Sezin"
-    affiliation: "İzmir Democracy University"
+    affiliation: "Faculty of Law, İzmir Democracy University"
     orcid: "https://orcid.org/0000-0002-9460-9583"
   - family-names: "Topal"
     given-names: "Selçuk"
-    affiliation: "İzmir Democracy University"
+    affiliation: "Department of Mathematics, İzmir Democracy University"
     orcid: "https://orcid.org/0000-0001-7074-2569"
 keywords:
   - defeasible logic
