@@ -12,24 +12,24 @@ warnings: warn_deadline(a) (IR-5), warn_remedies(a) (IR-3)
 
 why cause = F
   access(q)         [r3: RTIA Art. 25, second sentence]
-    - r1 (RTIA Arts. 4, 5(1), 7(1)) applies but is overridden by r2, explicit priority
-    - r2 (RTIA Art. 25, first sentence) applies but is overridden by r3, explicit priority
       internal(x)       [fact]
       staff(k,x)        [c1: RTIA Art. 25, second sentence ("kurum çalışanları")]
           employee(k)       [fact]
       affected(k,x)     [d1: IR-4]
           posted(k,w)       [fact]
           covers(x,w)       [fact]
+    against  r2 (RTIA Art. 25, first sentence): defeated by r3, explicit priority
+    also     r1 (RTIA Arts. 4, 5(1), 7(1)): defeated by r2, which is itself defeated
 
 time limit, RTIA Art. 11(1) with IR-1 and IR-2
   request received          2026-10-14 (Wed)
   reading I   15th working day 2026-11-05 (Thu)   signed 2026-11-06: 1 working day(s) late
   reading II  15th working day 2026-11-06 (Fri)   signed 2026-11-06: in time
 
-minimal changes that alter the aggregate (F)
-  flip employee(k)      -> T
-  flip posted(k,w)      -> R   open: affected(k,x)
+minimal changes that alter the aggregate (F), out of 15 candidate literals
   flip covers(x,w)      -> R   open: affected(k,x)
+  flip employee(k)      -> T
   flip held(x)          -> T
+  flip posted(k,w)      -> R   open: affected(k,x)
 
 remedies if the refusal is maintained: objection to the Board within 15 days of notification (notified 2026-11-09 -> 2026-11-24); action for annulment within 60 days (AJPA Art. 7)

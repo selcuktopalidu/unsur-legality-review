@@ -172,3 +172,22 @@ Source B: bedk.adalet.gov.tr individual decision PDFs (2020–2022)
 ## Window 23 (2005/761–2005/800)
 - 2005/782 Bağ-Kur; inspector employee affected; own sicil, disciplinary info, criteria (Art27), approvals of 2 inspectors' appointments; inst Reg36; PARTIAL -> Art25 issue F
 - 2005/790 DEU Mimarlık; research assistant affected by dept-head appointment; who proposed which candidate; inst 25; ACCEPT
+
+## Source C: BEDK compendium (2026)
+Source C: Bilgi Edinme Değerlendirme Kurulu, *BEDK Kararları Işığında Açıklamalı Bilgi Edinme Hakkı Kanunu*, 4th edition, BEDK Publication No. 14, June 2026, Article 25 section (pp. 559–598),
+https://bedk.adalet.gov.tr/Resimler/SayfaDokuman/20260703201216909BEDK%20Kararlar%C4%B1%20I%C5%9F%C4%B1%C4%9F%C4%B1nda%20A%C3%A7%C4%B1klamal%C4%B1%20Bilgi%20Edinme%20Hakk%C4%B1%20Kanunu.pdf
+The compendium reproduces decisions the Board chose to illustrate the article; it is not a random sample.
+Where a decision applied Art. 25 to some items and not to others, the row codes the items Art. 25 was applied to (as for 2005/626 and 2020/1796).
+- Example 1, Example 2 (before 2019): no decision number or date -> EXCLUDE
+- 2020/931 (19.08.2020) SGK; staff lawyer, coordinator; 2011 board decision on freelance lawyer procurement; "bilgi talebine konu düzenlemeden başvuru sahibinin etkilendiği anlaşıldığından" -> ACCEPT (no bar)
+- 2020/1571 (11.11.2020) İl MEM; teacher eliminated at deputy-principal interview; commission forms, minutes; "başvuru sahibini doğrudan etkileyen nitelikteki bilginin kendisine ait mülakat puanı olduğu", rest "doğrudan etkilemeyen kurum içi düzenleme" -> REJECT (bar)
+- 2024/2028 (27.11.2024) Çevre ve Şehircilik İl Md.; outsider relying on press reports; status of a registered historic property; no "güncel ve kişisel menfaat" -> REJECT (bar)
+- 2024/1489 (21.08.2024) Adalet Bakanlığı; candidate (34th in the written exam); own interview evaluation form; "kurum içi belge" -> REJECT (bar)
+- 2025/47 (08.01.2025) Genelkurmay; citizen; Anıtkabir expenditure; "kişisel ve güncel bir menfaatinin bulunmadığı" -> REJECT (bar)
+- 2025/1012 (04.06.2025) İTÜ; applicant presumed a student; library entry counts (to be given if a student) and visitor system/data sets (Art. 25) -> PARTIAL (bar for the coded items)
+- 2025/1362 (30.07.2025) university; employee in a promotion oral exam; each member's scores for him, forms, Q&A minutes; average score under Art. 5, rest "kurum içi düzenleme niteliğinde" -> PARTIAL (bar for the coded items; affectedness not addressed)
+- 2025/1395 (30.07.2025) Jandarma Komando Alay K.; lawyer for an injured soldier; incident and accident reports, health records; institutional parts "kendisini etkileyen bir işlem olmaması", legal-status parts released -> PARTIAL (bar for the coded items)
+- Orman Genel Müdürlüğü case (2025/…, agenda 13.08.2025): decision number not given -> EXCLUDE
+- 2025/1999 (05.11.2025) university; student of another university, did not sit the exam; final exam questions -> REJECT (bar)
+- 2025/2001 (05.11.2025) Ceza İnfaz Kurumu; private applicant via CİMER; meal menus; "kişisel, somut, meşru ve güncel menfaati bakımından hukuki yararını ve ilgisini belirtmediği" -> REJECT (bar)
+- 2025/2030 (05.11.2025) Jandarma Genel K.; lawyer for a specialist sergeant; sicil reports; scores "çalışma hayatını doğrudan etkileyen" -> to be notified; rest "iç işleyiş" -> PARTIAL (bar for the coded items)

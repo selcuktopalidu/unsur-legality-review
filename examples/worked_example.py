@@ -34,18 +34,19 @@ rules = {r.id: r for r in rb.rules}
 
 
 def show(node, indent="  ", depth=0):
+    """Premises first, then the arguments the conclusion defeats or reinstates."""
     by = node["by"]
     label = "fact" if by == "fact" else (f"{by.id}: {by.src}" if by else "not proved")
     print(f"{indent}{node['lit']:<18}[{label}]")
-    for r, over in node["superseded"]:
-        names = ", ".join(f"{o.id}, {res.reasons[(o.id, r.id)]}" for o in over)
-        print(f"{indent}  - {r.id} ({r.src}) applies but is overridden by {names}")
-    for s, stronger in node["overridden"]:
-        names = ", ".join(f"{t.id}, {res.reasons[(t.id, s.id)]}" for t in stronger)
-        print(f"{indent}  - {s.id} ({s.src}) applies but is overridden by {names}")
     if depth < 2:
         for p in node["premises"]:
             show(p, indent + "    ", depth + 1)
+    for s, stronger in node["overridden"]:
+        names = ", ".join(f"{t.id}, {res.reasons[(t.id, s.id)]}" for t in stronger)
+        print(f"{indent}  against  {s.id} ({s.src}): defeated by {names}")
+    for r, over in node["superseded"]:
+        names = ", ".join(o.id for o in over)
+        print(f"{indent}  also     {r.id} ({r.src}): defeated by {names}, which is itself defeated")
 
 
 print(f"UNSUR pre-check    rule base {rb.version}    reference date {signed}")
@@ -66,11 +67,14 @@ for k, d in deadline.items():
     print(f"  reading {k:<3} 15th working day {d} ({d:%a})   signed {signed}: "
           + (f"{late[k]} working day(s) late" if late[k] else "in time"))
 
-base, changes = minimal_changes(
-    rb, facts, determinations,
-    ["employee(k)", "posted(k,w)", "covers(x,w)", "internal(x)", "held(x)", "reasons(a)", "publicConcern(x)"],
-    mode="precheck", t=signed.isoformat())
-print(f"\nminimal changes that alter the aggregate ({base})")
+# candidates: the facts and determinations of the file that occur in rule bodies, except those that
+# describe the request and the draft itself
+framing = {"request(q,x)", "refusal(a)", "totalRefusal(a)", "signs(p,a)"}
+in_bodies = {b.lstrip("~") for r in rb.rules for b in r.body}
+candidates = sorted(l for l in facts if l.lstrip("~") in in_bodies and l not in framing)
+candidates += [a if v else "~" + a for a, v in determinations.items()]
+base, changes = minimal_changes(rb, facts, determinations, candidates, mode="precheck", t=signed.isoformat())
+print(f"\nminimal changes that alter the aggregate ({base}), out of {len(candidates)} candidate literals")
 for c in changes:
     f, d = set(facts), dict(determinations)
     from unsur.counterfactual import flip   # noqa: E402

@@ -16,7 +16,16 @@
       "accuracy_on_decided": 0.986,
       "referral_rate": 0.075
     },
-    "ms_per_file": 6.51
+    "compendium": {
+      "n": 11,
+      "agree": 9,
+      "disagree": 2,
+      "refer": 0,
+      "accuracy_on_decided": 0.818,
+      "referral_rate": 0.0
+    },
+    "ms_per_file": 12.15,
+    "max_open_atoms": 7
   },
   "withheld": {
     "dev": {
@@ -35,7 +44,16 @@
       "accuracy_on_decided": 1.0,
       "referral_rate": 0.588
     },
-    "ms_per_file": 9.27
+    "compendium": {
+      "n": 11,
+      "agree": 0,
+      "disagree": 4,
+      "refer": 7,
+      "accuracy_on_decided": 0.0,
+      "referral_rate": 0.636
+    },
+    "ms_per_file": 15.31,
+    "max_open_atoms": 7
   },
   "withheld_precheck": {
     "dev": {
@@ -54,7 +72,16 @@
       "accuracy_on_decided": 0.875,
       "referral_rate": 0.0
     },
-    "ms_per_file": 5.71
+    "compendium": {
+      "n": 11,
+      "agree": 1,
+      "disagree": 10,
+      "refer": 0,
+      "accuracy_on_decided": 0.091,
+      "referral_rate": 0.0
+    },
+    "ms_per_file": 9.23,
+    "max_open_atoms": 6
   },
   "test_by_pattern": {
     "board:affected_staff": {

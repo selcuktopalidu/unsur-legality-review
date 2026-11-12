@@ -12,9 +12,15 @@ public", the system does not guess: it reports which determination is missing
 and leaves the file to the official.
 
 The rule base covers refusals under Article 25 (internal regulations) of the
-Turkish Right to Information Act, Law No. 4982. The `eval` folder replays 107
+Turkish Right to Information Act, Law No. 4982. The `eval` folder replays 118
 decisions of the Right to Information Review Board (Bilgi Edinme Değerlendirme
 Kurulu) on that article.
+
+Open atoms are completed in two stages: askable facts first, then the
+open-textured predicates that the rules do not settle in that completion. A
+rule that derives an open-textured predicate (for example IR-4, which treats an
+employee posted to the covered unit as affected) therefore stays in force, and
+the facts it depends on are reported as decisive when they are missing.
 
 This repository accompanies the paper
 
@@ -59,18 +65,30 @@ three later decisions were read from the Board's website:
 [2021/1027](https://bedk.adalet.gov.tr/Resimler/SayfaDokuman/61020211500352021-1027%20Nolu%20Karar.pdf) and
 [2022/964](https://bedk.adalet.gov.tr/Resimler/SayfaDokuman/120920220920002022-964.pdf).
 
+Eleven further decisions from 2020 to 2025 were taken from the Article 25
+section (pp. 559–598) of the Board's own compendium, *Bilgi Edinme
+Değerlendirme Kurulu Kararları Işığında Bilgi Edinme Hakkı Kanunu*, 4th
+edition, June 2026,
+[PDF](https://bedk.adalet.gov.tr/Resimler/SayfaDokuman/20260703201216909BEDK%20Kararlar%C4%B1%20I%C5%9F%C4%B1%C4%9F%C4%B1nda%20A%C3%A7%C4%B1klamal%C4%B1%20Bilgi%20Edinme%20Hakk%C4%B1%20Kanunu.pdf).
+The Board chose them to illustrate the article, so they are not a random
+sample. Three examples given there without a decision number were left out.
+
 Each row codes the Article 25 question only. Parts of a request that the Board
 decided on other provisions (Arts. 3, 7, 19, 21, 27) are mentioned in `note`
-and are not part of the comparison. The 2004 decisions (`split = dev`) were
-used to write interpretation records IR-6 to IR-8; the rule base was then left
-unchanged for the decisions from 2005 onwards (`split = test`).
+and are not part of the comparison. Where the Board applied Article 25 to some
+items of a request and not to others, the row codes the items it applied it
+to. The 2004 decisions (`split = dev`) were used to write interpretation
+records IR-6 to IR-8; the rule base was then left unchanged for the decisions
+from 2005 to 2022 (`split = test`) and for the compendium decisions
+(`split = compendium`), which were coded after the replay of the first 107 was
+complete.
 
 Columns of `eval/bedk_art25.csv` (1 = yes, 0 = no, empty = not stated in the decision):
 
 | column | meaning |
 |---|---|
 | `id`, `date` | decision number and date |
-| `split` | `dev` (2004) or `test` (2005 onwards) |
+| `split` | `dev` (2004), `test` (2005–2022) or `compendium` (2020–2025, from the Board's compendium) |
 | `institution`, `request` | the institution and a summary of what was requested |
 | `pattern` | kind of case, used to group the results |
 | `employee` | the applicant works for the institution |

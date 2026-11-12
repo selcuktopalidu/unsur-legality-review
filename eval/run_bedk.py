@@ -53,7 +53,7 @@ def replay(rows, determinations, mode):
         status = "agree" if value == expected else ("refer" if value in ("N", "B") else "disagree")
         out.append({"id": row["id"], "split": row["split"], "pattern": row["pattern"], "board": expected,
                     "unsur": value, "status": status, "open": " ".join(res.decisive.get("cause", [])),
-                    "completions": res.completions})
+                    "completions": res.completions, "n_open": len(res.open_atoms)})
     return out
 
 
@@ -79,8 +79,9 @@ def main():
         res = replay(rows, dets, mode)
         elapsed = time.perf_counter() - t0
         all_results[name] = res
-        report[name] = {s: summary(res, s) for s in ("dev", "test")}
+        report[name] = {s: summary(res, s) for s in ("dev", "test", "compendium")}
         report[name]["ms_per_file"] = round(1000 * elapsed / len(rows), 2)
+        report[name]["max_open_atoms"] = max(r["n_open"] for r in res)
 
     by_pattern = defaultdict(Counter)
     for name in ("board", "withheld"):
@@ -102,10 +103,11 @@ def main():
     print("\nheld-out decisions by pattern (status counts):")
     for k, v in report["test_by_pattern"].items():
         print(f"  {k:<38} {v}")
-    print("\nnot in agreement (board run):")
-    for r in all_results["board"]:
-        if r["status"] != "agree":
-            print(f"  {r['id']:<10} {r['split']:<5} {r['pattern']:<20} board={r['board']} unsur={r['unsur']} open={r['open']}")
+    for name in ("board", "withheld"):
+        print(f"\nnot in agreement ({name} run):")
+        for r in all_results[name]:
+            if r["status"] != "agree" and (name == "board" or r["status"] == "disagree" or r["split"] == "compendium"):
+                print(f"  {r['id']:<10} {r['split']:<10} {r['pattern']:<20} board={r['board']} unsur={r['unsur']} open={r['open']}")
 
 
 if __name__ == "__main__":

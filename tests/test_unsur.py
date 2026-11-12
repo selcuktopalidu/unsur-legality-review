@@ -99,3 +99,16 @@ def test_record_regulation_yields_to_statute():
     facts = {"request(q,x)", "held(x)", "internal(x)", "personnelRecord(x)", "about(x,k)", "recordRegulation(x)"}
     res = evaluate(RB, facts, {"publicConcern(x)": False}, mode="review", elements=["cause"])
     assert res.values["cause"] == "F"
+
+
+def test_rules_deriving_open_textured_atoms_stay_active():
+    # affectedness is open, but IR-4 can derive it from the posting: the posting must count as decisive
+    facts = {"request(q,x)", "held(x)", "internal(x)", "employee(k)", "~about(x,k)", "~personnelRecord(x)",
+             "~formerEmployee(k)", "~actsForStaff(k)", "~serviceRelated(x,k)"}
+    res = evaluate(RB, facts, {"publicConcern(x)": False}, mode="review", elements=["cause"])
+    assert res.values["cause"] == "N"
+    assert {"posted(k,w)", "covers(x,w)", "affected(k,x)"} <= set(res.decisive["cause"])
+    # once posting and coverage are established, the completions no longer contradict d1
+    res = evaluate(RB, facts | {"posted(k,w)", "covers(x,w)"}, {"publicConcern(x)": False},
+                   mode="review", elements=["cause"])
+    assert res.values["cause"] == "F"

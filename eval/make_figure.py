@@ -1,4 +1,4 @@
-"""Figure for the paper: outcome of the replay by kind of decision, with and without the Board's assessments."""
+"""Figure 3 of the paper: held-out decisions of 2005-2022 by kind, with and without the Board's assessments."""
 import csv
 from collections import Counter, defaultdict
 from pathlib import Path
@@ -49,9 +49,8 @@ for ax, run in zip(axes, ("board", "withheld")):
             if hatch:   # re-draw the hatch in a tone of the fill so it survives grayscale print
                 ax.barh(i, n, left=left, height=0.62, color="none", edgecolor=HATCH_INK[key], linewidth=0,
                         hatch=hatch, zorder=3)
-            if n >= 2:
-                ax.text(left + n / 2, i, str(n), ha="center", va="center", color="white" if key == "agree" else INK,
-                        fontsize=7, zorder=4)
+            # every segment is labelled, in dark ink: no white text, and counts of one stay readable
+            ax.text(left + n / 2, i, str(n), ha="center", va="center", color=INK, fontsize=7, zorder=4)
             left += n
     ax.set_title(titles[run], fontsize=8, color=INK, loc="left", pad=4)
     ax.set_xlim(0, 27)
