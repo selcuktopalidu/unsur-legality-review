@@ -1,0 +1,35 @@
+UNSUR pre-check    rule base rti-0.3    reference date 2026-11-06
+draft: refusal of request q (internal directive x) made by applicant k
+
+element        value  rules
+competence     T      k1
+form           T      f1 w1 w2
+cause          F      r1 r2 r3 c1 d1
+subject        F      m1
+purpose        T      p0
+aggregate      F
+warnings: warn_deadline(a) (IR-5), warn_remedies(a) (IR-3)
+
+why cause = F
+  access(q)         [r3: RTIA Art. 25, second sentence]
+    - r1 (RTIA Arts. 4, 5(1), 7(1)) applies but is overridden by r2, explicit priority
+    - r2 (RTIA Art. 25, first sentence) applies but is overridden by r3, explicit priority
+      internal(x)       [fact]
+      staff(k,x)        [c1: RTIA Art. 25, second sentence ("kurum çalışanları")]
+          employee(k)       [fact]
+      affected(k,x)     [d1: IR-4]
+          posted(k,w)       [fact]
+          covers(x,w)       [fact]
+
+time limit, RTIA Art. 11(1) with IR-1 and IR-2
+  request received          2026-10-14 (Wed)
+  reading I   15th working day 2026-11-05 (Thu)   signed 2026-11-06: 1 working day(s) late
+  reading II  15th working day 2026-11-06 (Fri)   signed 2026-11-06: in time
+
+minimal changes that alter the aggregate (F)
+  flip employee(k)      -> T
+  flip posted(k,w)      -> R   open: affected(k,x)
+  flip covers(x,w)      -> R   open: affected(k,x)
+  flip held(x)          -> T
+
+remedies if the refusal is maintained: objection to the Board within 15 days of notification (notified 2026-11-09 -> 2026-11-24); action for annulment within 60 days (AJPA Art. 7)

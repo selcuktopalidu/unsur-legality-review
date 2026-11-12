@@ -1,0 +1,108 @@
+id,split,pattern,board,unsur_board,status_board,unsur_withheld,status_withheld,open_withheld
+2004/49,dev,not_affected,T,T,agree,N,refer,publicConcern(x)
+2004/69,dev,former_staff,F,F,agree,F,agree,
+2004/106,dev,public_concern,F,F,agree,N,refer,"publicConcern(x) affected(k,x) employee(k)"
+2004/107,dev,public_concern,F,F,agree,N,refer,"publicConcern(x) affected(k,x) employee(k)"
+2004/113,dev,not_internal,F,F,agree,F,agree,
+2004/149,dev,own_records,F,F,agree,F,agree,
+2004/150,dev,representative,F,F,agree,N,refer,"publicConcern(x) affected(k,x)"
+2004/166,dev,own_records,F,F,agree,F,agree,
+2004/167,dev,own_records,F,F,agree,F,agree,
+2004/168,dev,own_records,F,F,agree,F,agree,
+2004/169,dev,own_records,F,F,agree,F,agree,
+2004/176,dev,representative,F,F,agree,F,agree,
+2004/197,dev,public_concern,F,F,agree,N,refer,"publicConcern(x) affected(k,x) employee(k)"
+2004/204,dev,own_records,F,F,agree,F,agree,
+2004/212,dev,own_records,F,F,agree,F,agree,
+2004/226,dev,own_records,F,F,agree,F,agree,
+2004/227,dev,own_records,F,F,agree,F,agree,
+2004/228,dev,own_records,F,F,agree,F,agree,
+2004/229,dev,own_records,F,F,agree,F,agree,
+2004/230,dev,own_records,F,F,agree,F,agree,
+2004/231,dev,own_records,F,F,agree,F,agree,
+2004/232,dev,own_records,F,F,agree,F,agree,
+2004/233,dev,own_records,F,F,agree,F,agree,
+2004/235,dev,own_records,F,F,agree,F,agree,
+2004/234,dev,own_records,F,F,agree,F,agree,
+2004/237,dev,own_records,F,F,agree,F,agree,
+2004/257,dev,own_records,F,F,agree,F,agree,
+2005/7,test,affected_staff,F,F,agree,F,agree,
+2005/9,test,affected_staff,F,F,agree,F,agree,
+2005/12,test,affected_staff,F,F,agree,N,refer,"publicConcern(x) affected(k,x)"
+2005/13,test,own_records,F,F,agree,F,agree,
+2005/24,test,unclear,F,N,refer,N,refer,publicConcern(x) employee(k)
+2005/31,test,own_records,F,F,agree,F,agree,
+2005/40,test,own_records,F,F,agree,F,agree,
+2005/55,test,own_records,F,F,agree,F,agree,
+2005/67,test,unclear,F,N,refer,N,refer,"publicConcern(x) affected(k,x) employee(k)"
+2005/84,test,own_records,F,F,agree,F,agree,
+2005/88,test,affected_staff,F,F,agree,N,refer,"publicConcern(x) affected(k,x)"
+2005/93,test,affected_staff,F,F,agree,N,refer,"publicConcern(x) affected(k,x)"
+2005/113,test,affected_staff,F,F,agree,N,refer,"publicConcern(x) affected(k,x)"
+2005/120,test,not_affected,T,T,agree,N,refer,"publicConcern(x) affected(k,x) employee(k)"
+2005/128,test,own_records,F,F,agree,F,agree,
+2005/131,test,own_records,F,F,agree,F,agree,
+2005/134,test,own_records,F,F,agree,F,agree,
+2005/150,test,affected_staff,F,F,agree,N,refer,"publicConcern(x) affected(k,x)"
+2005/151,test,own_records,F,F,agree,F,agree,
+2005/153,test,own_records,F,F,agree,F,agree,
+2005/154,test,own_records,F,F,agree,F,agree,
+2005/155,test,own_records,F,F,agree,F,agree,
+2005/158,test,affected_staff,F,F,agree,N,refer,"publicConcern(x) affected(k,x)"
+2005/224,test,not_affected,T,T,agree,N,refer,"publicConcern(x) affected(k,x) employee(k)"
+2005/227,test,own_records,F,F,agree,F,agree,
+2005/228,test,affected_staff,F,F,agree,N,refer,"publicConcern(x) affected(k,x)"
+2005/233,test,former_staff,F,F,agree,N,refer,"publicConcern(x) affected(k,x)"
+2005/245,test,public_concern,F,F,agree,N,refer,"publicConcern(x) affected(k,x) employee(k)"
+2005/247,test,public_concern,F,F,agree,N,refer,"publicConcern(x) affected(k,x) employee(k)"
+2005/256,test,own_records,F,F,agree,F,agree,
+2005/257,test,own_records,F,F,agree,F,agree,
+2005/258,test,own_records,F,F,agree,F,agree,
+2005/260,test,former_staff,F,F,agree,F,agree,
+2005/267,test,unclear,F,N,refer,N,refer,"publicConcern(x) affected(k,x) employee(k)"
+2005/274,test,affected_staff,F,F,agree,N,refer,"publicConcern(x) affected(k,x)"
+2005/276,test,representative,F,F,agree,N,refer,"publicConcern(x) affected(k,x)"
+2005/277,test,not_affected,T,T,agree,N,refer,publicConcern(x)
+2005/281,test,affected_staff,F,F,agree,N,refer,"publicConcern(x) affected(k,x)"
+2005/365,test,not_affected,T,T,agree,N,refer,"publicConcern(x) affected(k,x) employee(k)"
+2005/366,test,affected_staff,F,F,agree,N,refer,"publicConcern(x) affected(k,x)"
+2005/401,test,affected_staff,F,F,agree,F,agree,
+2005/402,test,affected_staff,F,F,agree,F,agree,
+2005/403,test,affected_staff,F,F,agree,F,agree,
+2005/406,test,not_internal,F,F,agree,F,agree,
+2005/407,test,not_internal,F,F,agree,F,agree,
+2005/418,test,not_internal,F,F,agree,F,agree,
+2005/421,test,own_records,F,F,agree,F,agree,
+2005/427,test,public_concern,F,F,agree,N,refer,"publicConcern(x) affected(k,x) employee(k)"
+2005/433,test,not_affected,T,T,agree,N,refer,publicConcern(x)
+2005/443,test,affected_staff,F,F,agree,N,refer,"internal(x) publicConcern(x) affected(k,x)"
+2005/445,test,candidate_or_member,F,N,refer,N,refer,"publicConcern(x) affected(k,x) employee(k)"
+2005/447,test,affected_staff,F,F,agree,F,agree,
+2005/448,test,public_concern,F,F,agree,N,refer,"publicConcern(x) affected(k,x) employee(k)"
+2005/454,test,affected_staff,F,F,agree,N,refer,"publicConcern(x) affected(k,x)"
+2005/480,test,unclear,F,N,refer,N,refer,"publicConcern(x) affected(k,x) employee(k)"
+2005/482,test,affected_staff,F,F,agree,N,refer,"publicConcern(x) affected(k,x)"
+2005/488,test,public_concern,F,F,agree,N,refer,"publicConcern(x) affected(k,x)"
+2005/491,test,public_concern,F,F,agree,N,refer,"publicConcern(x) affected(k,x) employee(k)"
+2005/499,test,own_records,F,F,agree,F,agree,
+2005/510,test,not_internal,F,F,agree,F,agree,
+2005/544,test,representative,F,F,agree,N,refer,"publicConcern(x) affected(k,x)"
+2005/560,test,unclear,F,N,refer,N,refer,"publicConcern(x) affected(k,x) employee(k)"
+2005/564,test,affected_staff,F,F,agree,N,refer,"publicConcern(x) affected(k,x)"
+2005/566,test,affected_staff,F,F,agree,N,refer,"publicConcern(x) affected(k,x)"
+2005/596,test,own_records,F,F,agree,F,agree,
+2005/606,test,candidate_or_member,F,T,disagree,N,refer,publicConcern(x)
+2005/626,test,not_affected,T,T,agree,N,refer,"publicConcern(x) affected(k,x) employee(k)"
+2005/636,test,not_internal,F,F,agree,F,agree,
+2005/641,test,not_affected,T,T,agree,N,refer,"publicConcern(x) affected(k,x) employee(k)"
+2005/670,test,not_internal,F,F,agree,F,agree,
+2005/702,test,not_internal,F,F,agree,F,agree,
+2005/706,test,not_affected,T,T,agree,N,refer,publicConcern(x)
+2005/709,test,affected_staff,F,F,agree,N,refer,"publicConcern(x) affected(k,x)"
+2005/731,test,affected_staff,F,F,agree,N,refer,"publicConcern(x) affected(k,x)"
+2005/754,test,public_concern,F,F,agree,N,refer,"publicConcern(x) affected(k,x)"
+2005/782,test,affected_staff,F,F,agree,N,refer,"publicConcern(x) affected(k,x)"
+2005/790,test,affected_staff,F,F,agree,N,refer,"publicConcern(x) affected(k,x)"
+2020/1796,test,not_affected,T,T,agree,N,refer,publicConcern(x)
+2021/1027,test,affected_staff,F,F,agree,N,refer,"publicConcern(x) affected(k,x)"
+2022/964,test,not_affected,T,T,agree,N,refer,publicConcern(x)

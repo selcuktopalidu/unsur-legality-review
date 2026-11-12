@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this software or the coded decisions, please cite the paper below."
+title: "UNSUR: element-wise legality review of administrative acts in defeasible logic"
+version: "0.3"
+license:
+  - GPL-3.0-only
+  - CC-BY-4.0
+repository-code: "https://github.com/selcuktopalidu/unsur-legality-review"
+authors:
+  - family-names: "Öztoprak"
+    given-names: "Sezin"
+    affiliation: "İzmir Democracy University"
+    orcid: "https://orcid.org/0000-0002-9460-9583"
+  - family-names: "Topal"
+    given-names: "Selçuk"
+    affiliation: "İzmir Democracy University"
+    orcid: "https://orcid.org/0000-0001-7074-2569"
+keywords:
+  - defeasible logic
+  - administrative law
+  - legality review
+  - right to information
+  - rule-based systems
+preferred-citation:
+  type: article
+  title: "Element-wise legality review of administrative acts in defeasible logic, with an evaluation on Turkish right-to-information decisions"
+  status: in-preparation
+  authors:
+    - family-names: "Öztoprak"
+      given-names: "Sezin"
+      orcid: "https://orcid.org/0000-0002-9460-9583"
+    - family-names: "Topal"
+      given-names: "Selçuk"
+      orcid: "https://orcid.org/0000-0001-7074-2569"

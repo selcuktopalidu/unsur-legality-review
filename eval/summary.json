@@ -1,0 +1,118 @@
+{
+  "board": {
+    "dev": {
+      "n": 27,
+      "agree": 27,
+      "disagree": 0,
+      "refer": 0,
+      "accuracy_on_decided": 1.0,
+      "referral_rate": 0.0
+    },
+    "test": {
+      "n": 80,
+      "agree": 73,
+      "disagree": 1,
+      "refer": 6,
+      "accuracy_on_decided": 0.986,
+      "referral_rate": 0.075
+    },
+    "ms_per_file": 6.51
+  },
+  "withheld": {
+    "dev": {
+      "n": 27,
+      "agree": 22,
+      "disagree": 0,
+      "refer": 5,
+      "accuracy_on_decided": 1.0,
+      "referral_rate": 0.185
+    },
+    "test": {
+      "n": 80,
+      "agree": 33,
+      "disagree": 0,
+      "refer": 47,
+      "accuracy_on_decided": 1.0,
+      "referral_rate": 0.588
+    },
+    "ms_per_file": 9.27
+  },
+  "withheld_precheck": {
+    "dev": {
+      "n": 27,
+      "agree": 26,
+      "disagree": 1,
+      "refer": 0,
+      "accuracy_on_decided": 0.963,
+      "referral_rate": 0.0
+    },
+    "test": {
+      "n": 80,
+      "agree": 70,
+      "disagree": 10,
+      "refer": 0,
+      "accuracy_on_decided": 0.875,
+      "referral_rate": 0.0
+    },
+    "ms_per_file": 5.71
+  },
+  "test_by_pattern": {
+    "board:affected_staff": {
+      "agree": 26
+    },
+    "board:candidate_or_member": {
+      "refer": 1,
+      "disagree": 1
+    },
+    "board:former_staff": {
+      "agree": 2
+    },
+    "board:not_affected": {
+      "agree": 10
+    },
+    "board:not_internal": {
+      "agree": 7
+    },
+    "board:own_records": {
+      "agree": 19
+    },
+    "board:public_concern": {
+      "agree": 7
+    },
+    "board:representative": {
+      "agree": 2
+    },
+    "board:unclear": {
+      "refer": 5
+    },
+    "withheld:affected_staff": {
+      "agree": 6,
+      "refer": 20
+    },
+    "withheld:candidate_or_member": {
+      "refer": 2
+    },
+    "withheld:former_staff": {
+      "refer": 1,
+      "agree": 1
+    },
+    "withheld:not_affected": {
+      "refer": 10
+    },
+    "withheld:not_internal": {
+      "agree": 7
+    },
+    "withheld:own_records": {
+      "agree": 19
+    },
+    "withheld:public_concern": {
+      "refer": 7
+    },
+    "withheld:representative": {
+      "refer": 2
+    },
+    "withheld:unclear": {
+      "refer": 5
+    }
+  }
+}

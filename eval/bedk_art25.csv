@@ -1,0 +1,108 @@
+id,date,split,institution,request,pattern,employee,former,service_related,acts_for_staff,about,personnel_record,record_regulation,internal,public_concern,affected,board_art25,board_outcome,note
+2004/49,2004-08-31,dev,Ministry of Justice (prison),"whether prison telephone and visiting-booth conversations are monitored, and by whom",not_affected,0,0,,0,0,0,0,1,0,,bar,partial,"Board: internal regulation, outside the Act"
+2004/69,2004-09-10,dev,Ankara Chamber of Commerce,documents from the applicant's period of employment,former_staff,0,1,1,0,1,0,0,1,,1,no_bar,accept,former employee
+2004/106,2004-09-20,dev,Tea Enterprises (ÇAYKUR),"balance sheets and expenditure of two regional directorates, 1997-2003",public_concern,,0,,0,0,0,0,1,1,,no_bar,accept,Board: of concern to the public
+2004/107,2004-09-20,dev,Tea Enterprises (ÇAYKUR),inspection and investigation reports on a regional directorate,public_concern,,0,,0,0,0,0,1,1,,no_bar,accept,Board: not solely internal
+2004/113,2004-09-27,dev,Land Forces Command,documents concerning the applicants' applications,not_internal,,0,,0,,0,0,0,,,no_bar,accept,Board: not within Art. 25
+2004/149,2004-10-25,dev,Land Office,"own personnel evaluation reports, 1999-2003",own_records,,0,,0,1,1,0,1,,,no_bar,accept,
+2004/150,2004-10-25,dev,Ministry of Public Works,reasons for changing the salary bank; bank protocol,representative,0,0,,1,0,0,0,1,,1,no_bar,accept,"union acting for member employees (Law 4688, Art. 19)"
+2004/166,2004-11-01,dev,TODAİE,own personnel evaluation summary,own_records,,0,,0,1,1,0,1,,,no_bar,partial,witness statements: Art. 19 (excluded)
+2004/167,2004-11-01,dev,Denizli Health Directorate,"own personnel evaluation reports, 1997-2004",own_records,,0,,0,1,1,0,1,,,no_bar,accept,
+2004/168,2004-11-01,dev,Tokat Education Directorate,own personnel evaluation records,own_records,,0,,0,1,1,0,1,,,no_bar,accept,
+2004/169,2004-11-01,dev,Kartal Anatolian High School,own personnel evaluation records,own_records,,0,,0,1,1,0,1,,,no_bar,accept,
+2004/176,2004-11-22,dev,SSK İzmir Training Hospital,"documents on the appointment of the lawyer's client, a physician",representative,0,0,,1,1,0,0,1,,1,no_bar,accept,lawyer acting for an employee
+2004/197,2004-12-06,dev,Zeytinburnu Education Directorate,"investigation file: defence, evidence, witness statements, report",public_concern,,0,,0,,0,0,1,1,,no_bar,partial,Board rejected 'solely internal'; Arts. 19-20 (excluded)
+2004/204,2004-12-06,dev,Dokuz Eylül University,own 2004 evaluation records,own_records,,0,,0,1,1,0,1,,,no_bar,accept,
+2004/212,2004-12-20,dev,Tire Education Directorate,own evaluation report,own_records,,0,,0,1,1,0,1,,,no_bar,accept,
+2004/226,2004-12-20,dev,Land Registry and Cadastre,own evaluation files,own_records,,0,,0,1,1,0,1,,,no_bar,accept,
+2004/227,2004-12-20,dev,Ministry of Labour,own evaluation files,own_records,,0,,0,1,1,0,1,,,no_bar,accept,
+2004/228,2004-12-20,dev,Ministry of Labour,own evaluation files,own_records,,0,,0,1,1,0,1,,,no_bar,accept,
+2004/229,2004-12-20,dev,Land Registry and Cadastre,"own evaluation files, 1998-2003",own_records,,0,,0,1,1,0,1,,,no_bar,accept,
+2004/230,2004-12-20,dev,Ministry of Labour,own evaluation files since 1993,own_records,,0,,0,1,1,0,1,,,no_bar,accept,
+2004/231,2004-12-20,dev,İstanbul Education Directorate,own evaluation files (six years),own_records,,0,,0,1,1,0,1,,,no_bar,accept,
+2004/232,2004-12-20,dev,Public Procurement Authority,"own evaluation files, 2002-2003",own_records,,0,,0,1,1,0,1,,,no_bar,accept,
+2004/233,2004-12-20,dev,Ege University,"own evaluation reports, 2003-2004",own_records,,0,,0,1,1,0,1,,,no_bar,accept,
+2004/235,2004-12-20,dev,TRT,own 1988 evaluation report and internship examination decision,own_records,,0,,0,1,1,0,1,,,no_bar,accept,
+2004/234,2004-12-20,dev,Air Force Command,own evaluation reports,own_records,,0,,0,1,1,0,1,,,no_bar,partial,letters of appreciation: Art. 8 (excluded)
+2004/237,2004-12-20,dev,İstanbul Directorate of Finance,own evaluation report,own_records,,0,,0,1,1,0,1,,,no_bar,accept,
+2004/257,2004-12-20,dev,Harran University vocational school,own evaluation report; refusal based on the record regulation,own_records,,0,,0,1,1,1,1,,,no_bar,accept,
+2005/7,2005-01-10,test,Zeytinburnu Education Directorate,"investigation file concerning the applicant, a teacher",affected_staff,1,0,,0,1,0,0,1,,1,no_bar,partial,Board: Art. 25 cannot be raised against the applicant; Art. 19(d) parts redacted
+2005/9,2005-01-10,test,Ministry of Public Works,governorship letter on which the applicant's transfer was based,affected_staff,1,0,,0,1,0,0,1,,,no_bar,accept,
+2005/12,2005-01-10,test,Land Forces Command,documents on the handling of the applicant's criminal complaint,affected_staff,1,0,,0,,0,0,1,,1,no_bar,partial,judicial documents referred to the judicial authorities (excluded)
+2005/13,2005-01-10,test,TODAİE,own evaluation reports from the former and the present institution,own_records,,0,,0,1,1,0,1,,,no_bar,partial,fate of five petitions (excluded)
+2005/24,2005-01-10,test,Mersin University,administrative investigation file,unclear,,0,,0,1,0,0,1,,1,no_bar,accept,Board: applicant affected by the investigation; staff status not stated
+2005/31,2005-01-17,test,National Lottery Administration,own evaluation report,own_records,,0,,0,1,1,0,1,,,no_bar,accept,
+2005/40,2005-01-17,test,Karadeniz Technical University,"own evaluation reports, 1995-2003",own_records,,0,,0,1,1,0,1,,,no_bar,accept,
+2005/55,2005-01-31,test,Ministry of Agriculture,own evaluation report and inspection reports on the applicant's disciplinary case,own_records,1,0,,0,1,1,0,1,,,no_bar,accept,
+2005/67,2005-01-31,test,Adana Police Directorate,"duty log, minutes, reports and warning letters",unclear,,0,,0,,0,0,1,,,no_bar,accept,staff status and relation to the documents not stated
+2005/84,2005-02-11,test,Karamanlı Education Directorate,own evaluation records (six years); refusal citing classification,own_records,,0,,0,1,1,0,1,,,no_bar,accept,
+2005/88,2005-02-11,test,Bağ-Kur,"lists of inspection and investigation assignments, 2003-2004",affected_staff,1,0,,0,,0,0,1,,1,no_bar,accept,
+2005/93,2005-02-11,test,Ministry of Education (personnel),numbers of unappointed candidates and of vacant posts,affected_staff,1,0,,0,,0,0,1,,1,no_bar,partial,items 3-4 not information (Art. 3; excluded)
+2005/113,2005-02-11,test,Ministry of Education (personnel),"same requests as 2005/93, another applicant",affected_staff,1,0,,0,,0,0,1,,1,no_bar,partial,items 3-4 not information (Art. 3; excluded)
+2005/120,2005-02-25,test,İstanbul University,disciplinary investigations conducted by a faculty member; names of investigators and investigated persons,not_affected,,0,,0,0,0,0,1,0,0,bar,reject,one dissent
+2005/128,2005-02-25,test,Kırıkkale University,own evaluation reports; refusal citing the record regulation,own_records,,0,,0,1,1,1,1,,,no_bar,accept,
+2005/131,2005-02-25,test,General Staff,"own evaluation records, 1990-2000",own_records,,0,,0,1,1,0,1,,,no_bar,accept,
+2005/134,2005-02-25,test,Bursa Directorate of Finance,own evaluation records,own_records,,0,,0,1,1,0,1,,,no_bar,accept,
+2005/150,2005-03-11,test,PTT Savings Fund,fund board decision on the use of loans,affected_staff,1,0,,0,,0,0,1,,1,no_bar,accept,PTT employee and fund member
+2005/151,2005-03-11,test,Bursa Directorate of Finance,own personnel file and evaluation reports,own_records,,0,,0,1,1,0,1,,,no_bar,accept,
+2005/153,2005-03-11,test,Bursa Directorate of Finance,own personnel file and evaluation reports,own_records,,0,,0,1,1,0,1,,,no_bar,accept,
+2005/154,2005-03-11,test,Land Registry and Cadastre,"own evaluation reports, 2002-2004; refusal citing the record regulation",own_records,,0,,0,1,1,1,1,,,no_bar,accept,
+2005/155,2005-03-11,test,Bursa Directorate of Finance,own personnel file and evaluation reports,own_records,,0,,0,1,1,0,1,,,no_bar,accept,
+2005/158,2005-03-11,test,Dokuz Eylül University,information on the lecturers teaching the department's courses,affected_staff,1,0,,0,0,0,0,1,,1,no_bar,accept,
+2005/224,2005-04-06,test,a ministry,inspection reports on two other persons,not_affected,,0,,0,0,0,0,1,0,0,bar,reject,also Art. 21
+2005/227,2005-04-06,test,Dokuz Eylül University,"own evaluation reports, investigation reports and appointment papers",own_records,,0,,0,1,1,0,1,,,no_bar,accept,
+2005/228,2005-04-06,test,Muğla University,"petition, university board decision and YÖK correspondence on an appointment in the applicant's department",affected_staff,1,0,,0,,0,0,1,,1,no_bar,accept,head of department
+2005/233,2005-04-06,test,Atatürk High Institution of Culture,"whether a second legal adviser was appointed, and his name",former_staff,0,1,1,0,0,0,0,1,,1,no_bar,accept,former legal adviser; one dissent
+2005/245,2005-04-15,test,Mediterranean Exporters' Unions,foreign travel and payments in 2004,public_concern,,0,,0,0,0,0,1,1,,no_bar,accept,public funds
+2005/247,2005-04-15,test,a municipality,transfers of civil servants (item 1),public_concern,,0,,0,0,0,0,1,1,,no_bar,partial,item 2: Art. 7(2) (excluded)
+2005/256,2005-04-15,test,Kırşehir Education Directorate,own evaluation reports,own_records,1,0,,0,1,1,0,1,,,no_bar,accept,
+2005/257,2005-04-15,test,Council of State,own evaluation reports,own_records,,0,,0,1,1,0,1,,,no_bar,accept,
+2005/258,2005-04-15,test,Rize Justice Commission,own evaluation reports,own_records,,0,,0,1,1,0,1,,,no_bar,accept,
+2005/260,2005-04-15,test,Abant İzzet Baysal University,"duty rosters, logs, visitor book and investigation report (dismissal)",former_staff,0,1,1,0,1,0,0,1,,1,no_bar,accept,
+2005/267,2005-04-15,test,Adnan Menderes University,documents for use in an investigation,unclear,,0,,0,,0,0,1,,,no_bar,partial,claims to be staff; Art. 21 for some items (excluded)
+2005/274,2005-04-27,test,Bağ-Kur Inspection Board,items 3-4 of the request,affected_staff,1,0,,0,,0,0,1,,1,no_bar,accept,
+2005/276,2005-04-27,test,Electrical Works Survey Administration,bank protocol and meal-service arrangements,representative,0,0,,1,0,0,0,1,,1,no_bar,accept,union representative
+2005/277,2005-04-27,test,Edremit District Governorship,appointments and transfers,not_affected,0,0,,0,0,0,0,1,0,,bar,partial,
+2005/281,2005-04-27,test,Ministry of Education,documents on the selection for overseas postings,affected_staff,1,0,,0,,0,0,1,,1,no_bar,accept,
+2005/365,2005-06-01,test,SSK Inspection Board,disciplinary documents on two other persons,not_affected,,0,,0,0,0,0,1,0,0,bar,reject,also Art. 19(a)
+2005/366,2005-06-01,test,SSK Inspection Board,"numbers of assignment orders per inspector, 2001-2003",affected_staff,1,0,,0,,0,0,1,,1,no_bar,accept,Art. 7(2) objection rejected
+2005/401,2005-06-01,test,Bayburt Municipality,attendance sheets and investigation documents,affected_staff,1,0,,0,1,0,0,1,,1,no_bar,partial,other items: Art. 19 (excluded)
+2005/402,2005-06-01,test,Bayburt Municipality,attendance sheets and investigation documents,affected_staff,1,0,,0,1,0,0,1,,1,no_bar,partial,other items: Art. 19 (excluded)
+2005/403,2005-06-01,test,Bayburt Municipality,attendance sheets and investigation documents,affected_staff,1,0,,0,1,0,0,1,,1,no_bar,partial,other items: Art. 19 (excluded)
+2005/406,2005-06-01,test,Turkish Standards Institution,"number of contracted lawyers, payments and selection criteria",not_internal,0,0,,0,,0,0,0,,,no_bar,partial,item 2 opinion (Art. 27; excluded)
+2005/407,2005-06-01,test,Ankara Water Administration,"number of contracted lawyers, payments and selection criteria",not_internal,0,0,,0,,0,0,0,,,no_bar,partial,item 2 opinion (Art. 27; excluded)
+2005/418,2005-06-01,test,Mersin University,minutes of an open recruitment examination,not_internal,0,0,,0,,0,0,0,,,no_bar,accept,examination open to outsiders
+2005/421,2005-06-01,test,Atatürk University,own personnel file (former employee),own_records,0,1,1,0,1,1,0,1,,,no_bar,accept,
+2005/427,2005-06-15,test,SSK Inspection Board,inspection report and supplementary report,public_concern,,0,,0,,0,0,1,1,,no_bar,accept,administrative supervision
+2005/433,2005-06-15,test,Bozcaada District Governorship,"post, transfer form and reports of a staff member (items 2-4)",not_affected,0,0,,0,0,0,0,1,0,,bar,partial,
+2005/443,2005-06-15,test,Electrical Works Survey Administration,"approval, fuel and maintenance records of an official car",affected_staff,1,0,,0,0,0,0,,,1,no_bar,accept,Board: no exception applies; employees' right in any event
+2005/445,2005-06-15,test,Ministry of Education,"examination results, commission and question-preparation records",candidate_or_member,,0,,0,0,0,0,1,,1,no_bar,partial,applicant held affected because he sat the examination and interview; staff status not stated; opinion items (Art. 27; excluded)
+2005/447,2005-06-15,test,PTT,"guard-duty rosters, visitor logs and vehicle records concerning the applicant",affected_staff,1,0,,0,1,0,0,1,,1,no_bar,accept,
+2005/448,2005-06-15,test,Ziraat Bank,names and posts of staff on temporary assignment (item b),public_concern,,0,,0,0,0,0,1,1,,no_bar,partial,item a outside the Board's remit (excluded)
+2005/454,2005-06-15,test,Konak Selma Yiğitalp High School,"school records: laboratories, staff, leave, renovation",affected_staff,1,0,,0,0,0,0,1,,1,no_bar,partial,one item opinion (Art. 27; excluded)
+2005/480,2005-06-22,test,Bağ-Kur,letter issued after an inspection of the IT department,unclear,,0,,0,,0,0,1,,1,no_bar,accept,Board: applicant affected; staff status not stated
+2005/482,2005-06-22,test,Administration for the Disabled,"turnstile records, telephone lines and room areas",affected_staff,1,0,,0,,0,0,1,,1,no_bar,partial,turnstile list not archived (Art. 7(1); excluded)
+2005/488,2005-06-22,test,Gaziantep Education Directorate,"teachers' house: hairdresser, staff, funds and purchases",public_concern,0,0,,1,0,0,0,1,1,,no_bar,accept,union; budget-funded
+2005/491,2005-06-22,test,Edremit High School,money collected from pupils (item 4),public_concern,,0,,0,0,0,0,1,1,,no_bar,partial,item 6 sent for review (excluded)
+2005/499,2005-06-29,test,İstanbul Directorate of Finance,own evaluation records (five years),own_records,,0,,0,1,1,0,1,,,no_bar,accept,
+2005/510,2005-06-29,test,TRT,questions and answers of a written test,not_internal,0,0,,1,0,0,0,0,,,no_bar,accept,public examination; union applicant
+2005/544,2005-07-08,test,General Directorate of Highways,bank promotion received for salary payments,representative,0,0,,1,0,0,0,1,,1,no_bar,accept,union
+2005/560,2005-07-22,test,Ministry of Health,"names, posts and terms of contract staff appointed without examination",unclear,,0,,0,0,0,0,1,,,no_bar,partial,reasons item opinion (Art. 27; excluded)
+2005/564,2005-07-22,test,Prime Ministry,housing allocation decisions and points tables,affected_staff,1,0,,0,,0,0,1,,1,no_bar,accept,
+2005/566,2005-07-22,test,Karadeniz Technical University,delegation document and department register,affected_staff,1,0,,0,,0,0,1,,1,no_bar,partial,item 1 not information (Art. 3; excluded)
+2005/596,2005-08-18,test,İstanbul 1st Election Board,"own evaluation reports, 1991-2004",own_records,,0,,0,1,1,0,1,,,no_bar,accept,
+2005/606,2005-08-18,test,İstanbul Chamber of Accountants,contact list of the chamber's members,candidate_or_member,0,0,,0,0,0,0,1,0,1,no_bar,accept,member treated as affected
+2005/626,2005-09-07,test,Grand National Assembly,"minutes on the renovation of the plenary hall (items 1, 3, 8)",not_affected,,0,,0,0,0,0,1,0,0,bar,partial,
+2005/636,2005-09-07,test,Celal Bayar University,copies of the applicant's own earlier petitions,not_internal,,0,,0,1,0,0,0,,,no_bar,accept,
+2005/641,2005-09-07,test,Social Insurance Institution,question and answer sheets of an internal examination the applicant did not sit,not_affected,,0,,0,0,0,0,1,0,0,bar,reject,
+2005/670,2005-09-21,test,TRT,"regional services, staff numbers, total pay and advertising revenue",not_internal,,0,,0,,0,0,0,,,no_bar,partial,pay details: Art. 7(2) (excluded)
+2005/702,2005-10-04,test,İzmir Health Directorate,"factory inspection: commission, report and physicians",not_internal,,0,,0,,0,0,0,,,no_bar,partial,
+2005/706,2005-10-04,test,not stated,internal arrangements (items 7-9) in a tender dispute,not_affected,0,0,,0,0,0,0,1,0,,bar,partial,firm's lawyer
+2005/709,2005-10-04,test,Niğde University,correspondence and board decisions on a master's student supervised by the applicant,affected_staff,1,0,,0,,0,0,1,,1,no_bar,partial,Art. 21 (excluded)
+2005/731,2005-10-19,test,Manisa Education Directorate,numbers of deputy and branch director posts and appointments,affected_staff,1,0,,0,,0,0,1,,1,no_bar,accept,
+2005/754,2005-11-09,test,Bağ-Kur,three investigation reports,public_concern,1,0,,0,,0,0,1,1,,no_bar,partial,"personal data withheld (Arts. 19(a), 21)"
+2005/782,2005-11-09,test,Bağ-Kur,approvals of two inspectors' appointments,affected_staff,1,0,,0,,0,0,1,,1,no_bar,partial,criteria item opinion (Art. 27; excluded)
+2005/790,2005-11-09,test,Dokuz Eylül University,which staff proposed which candidate for head of department,affected_staff,1,0,,0,,0,0,1,,1,no_bar,accept,
+2020/1796,2020-12-16,test,İstanbul Metropolitan Municipality,inspection papers on a complaint about a market stall (item 1),not_affected,0,0,,0,0,0,0,1,0,,bar,partial,
+2021/1027,2021-08-18,test,a training and research hospital,monthly physician assignments to intensive-care units,affected_staff,1,0,,0,,0,0,1,,1,no_bar,accept,Art. 25 s. 2 overlooked by the hospital
+2022/964,2022-08-03,test,Harran University,appointments to branch-manager posts without a promotion examination,not_affected,0,0,,0,0,0,0,1,0,,bar,reject,applicant described as a stakeholder

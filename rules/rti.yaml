@@ -1,0 +1,184 @@
+# Rule base for refusals under the Right to Information Act (Law No. 4982).
+# Ground literals: q request, x requested document, k applicant, w applicant's unit,
+# a draft decision, p signatory.  "~" is classical negation.
+# Frozen after the 2004 development decisions; not changed for the evaluation.
+version: rti-0.3
+
+open_textured:
+  publicConcern:            # Art. 25: "kamuoyunu ilgilendirmeyen"
+    burden: administration
+    presume: true           # a refusal must show that the regulation is of no public concern
+    presume_in: [precheck]
+  affected:                 # Art. 25: "düzenlemeden etkilenen"
+    burden: applicant
+  misuse:                   # misuse of power (purpose element)
+    burden: challenger
+    presume: false          # presumption of legality
+    presume_in: [precheck, review]
+
+askable: [employee, formerEmployee, serviceRelated, actsForStaff, about, personnelRecord,
+          internal, posted, covers]
+
+elements:
+  competence: {lawful: "competent(a)", unlawful: "~competent(a)"}
+  form:       {lawful: "formOK(a)", unlawful: "~formOK(a)"}
+  cause:      {lawful: "~access(q)", unlawful: "access(q)"}
+  subject:    {lawful: "subjectOK(a)", unlawful: "~subjectOK(a)"}
+  purpose:    {lawful: "properPurpose(a)", unlawful: "~properPurpose(a)"}
+
+records:
+  IR-1: The date of a request is the date it reaches the institution (Implementing Regulation, Art. 9); the period starts on the next working day.
+  IR-2: Whether 28 October (half-day holiday) is a working day is left open; the earlier deadline binds the administration, the later one is used against the applicant.
+  IR-3: Failure to indicate remedies is not by itself an essential defect; time limits do not run against the applicant.
+  IR-4: An employee posted to a unit covered by an internal regulation is affected by it (Board Decision 2021/1027).
+  IR-5: A late reply is not an essential procedural defect.
+  IR-6: Records about the applicant personally, including personnel evaluation reports, affect the applicant and are open to him or her (Board Decision 2004/12; RTIA Art. 5(2)).
+  IR-7: A former employee counts as staff for documents relating to the period of service (Board Decision 2004/69).
+  IR-8: A union or lawyer acting for affected staff counts as staff (Law No. 4688, Art. 19; Board Decisions 2004/150, 2004/176).
+
+rules:
+  # cause: the duty to grant access ------------------------------------------
+  - id: r0
+    src: RTIA Art. 7(1) (only information the institution holds)
+    element: cause
+    valid_from: 2004-04-24
+    if: ["~held(x)"]
+    then: "~access(q)"
+    beats: [r3, r4]
+
+  - id: r1
+    src: RTIA Arts. 4, 5(1), 7(1)
+    element: cause
+    valid_from: 2004-04-24
+    if: ["request(q,x)", "held(x)"]
+    then: "access(q)"
+
+  - id: r2
+    src: RTIA Art. 25, first sentence
+    element: cause
+    valid_from: 2004-04-24
+    if: ["internal(x)", "~publicConcern(x)"]
+    then: "~access(q)"
+    beats: [r1]
+
+  - id: r3
+    src: RTIA Art. 25, second sentence
+    element: cause
+    valid_from: 2004-04-24
+    if: ["internal(x)", "staff(k,x)", "affected(k,x)"]
+    then: "access(q)"
+    beats: [r2]
+
+  - id: r4
+    src: RTIA Arts. 5(2), 25; Board Decision 2004/12
+    record: IR-6
+    element: cause
+    valid_from: 2004-07-05
+    if: ["personnelRecord(x)", "about(x,k)"]
+    then: "access(q)"
+    beats: [r2]
+
+  - id: r5
+    src: Civil Servants' Record Regulation (confidential evaluation reports)
+    level: 2
+    element: cause
+    if: ["personnelRecord(x)", "recordRegulation(x)"]
+    then: "~access(q)"
+
+  # constitutive rules ---------------------------------------------------------
+  - id: c1
+    src: RTIA Art. 25, second sentence ("kurum çalışanları")
+    kind: strict
+    if: ["employee(k)"]
+    then: "staff(k,x)"
+
+  - id: c2
+    src: IR-7
+    record: IR-7
+    if: ["formerEmployee(k)", "serviceRelated(x,k)"]
+    then: "staff(k,x)"
+
+  - id: c3
+    src: IR-8; Law No. 4688, Art. 19
+    record: IR-8
+    if: ["actsForStaff(k)"]
+    then: "staff(k,x)"
+
+  - id: d1
+    src: IR-4
+    record: IR-4
+    if: ["posted(k,w)", "covers(x,w)"]
+    then: "affected(k,x)"
+
+  - id: d2
+    src: IR-6
+    record: IR-6
+    if: ["about(x,k)"]
+    then: "affected(k,x)"
+
+  # competence --------------------------------------------------------------
+  - id: k1
+    src: institution's directive on signing powers
+    element: competence
+    kind: strict
+    if: ["signs(p,a)", "authorised(p)"]
+    then: "competent(a)"
+
+  - id: k2
+    src: institution's directive on signing powers
+    element: competence
+    kind: strict
+    if: ["signs(p,a)", "~authorised(p)"]
+    then: "~competent(a)"
+
+  # form --------------------------------------------------------------------
+  - id: f1
+    src: RTIA Art. 12 (reasons; essential)
+    element: form
+    if: ["refusal(a)", "reasons(a)"]
+    then: "formOK(a)"
+
+  - id: f2
+    src: RTIA Art. 12 (reasons; essential)
+    element: form
+    if: ["refusal(a)", "~reasons(a)"]
+    then: "~formOK(a)"
+
+  - id: w1
+    src: RTIA Art. 12; Constitution Art. 40(2)
+    record: IR-3
+    if: ["refusal(a)", "~remedies(a)"]
+    then: "warn_remedies(a)"
+
+  - id: w2
+    src: RTIA Art. 11(1)
+    record: IR-5
+    if: ["refusal(a)", "lateUnderSomeReading(a)"]
+    then: "warn_deadline(a)"
+
+  # subject matter ------------------------------------------------------------
+  - id: m1
+    src: RTIA Arts. 5(1), 9
+    element: subject
+    if: ["access(q)", "totalRefusal(a)"]
+    then: "~subjectOK(a)"
+
+  - id: m2
+    src: RTIA Art. 5(1)
+    element: subject
+    if: ["~access(q)", "refusal(a)"]
+    then: "subjectOK(a)"
+
+  # purpose -------------------------------------------------------------------
+  - id: p0
+    src: presumption of legality
+    element: purpose
+    if: []
+    then: "properPurpose(a)"
+
+  - id: p1
+    src: AJPA Art. 2(1)(a), misuse of power
+    element: purpose
+    if: ["misuse(a)"]
+    then: "~properPurpose(a)"
+    beats: [p0]
